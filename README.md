@@ -1,2 +1,2 @@
-# rslup_phase2_yourname_project_ui
+# rslup_phase2_Hemantha_project_ui
 Angular UI
