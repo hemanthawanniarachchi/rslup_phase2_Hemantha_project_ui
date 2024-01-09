@@ -1,0 +1,130 @@
+{
+    "user": [
+      {
+        "id": "admin123",
+        "name": "ABC Solutions",
+        "password": "Admin$5678",
+        "email": "admin@abc.com",
+        "gender": "female",
+        "role": "admin",
+        "isactive": true,
+        "address": {
+          "area": "New York"
+        }
+      },
+      {
+        "id": "testuser456",
+        "name": "John Doe",
+        "password": "Test@5678",
+        "email": "john.doe@example.com",
+        "gender": "male",
+        "role": "user",
+        "isactive": true,
+        "address": {
+          "area": "Los Angeles"
+        }
+      },
+      {
+        "id": "TechGuy1",
+        "name": "Tech Innovators",
+        "password": "Tech@9876",
+        "email": "tech@innovate.com",
+        "gender": "male",
+        "role": "tech",
+        "isactive": true,
+        "address": {
+          "area": "San Francisco"
+        }
+      },
+      {
+        "id": "user567",
+        "name": "Samantha",
+        "password": "Sam@4321",
+        "email": "samantha@example.com",
+        "gender": "female",
+        "role": "tech",
+        "isactive": true,
+        "address": {
+          "area": "Seattle"
+        }
+      }
+    ],
+    "role": [
+      {
+        "code": "user",
+        "name": "User"
+      },
+      {
+        "code": "tech",
+        "name": "Technician"
+      }
+    ],
+    "menu": [
+      {
+        "code": "user",
+        "name": "User"
+      },
+      {
+        "code": "customer",
+        "name": "Customer"
+      }
+    ],
+    "roleaccess": [
+      {
+        "role": "admin",
+        "menu": "user",
+        "haveedit": true,
+        "haveadd": true,
+        "havedelete": true
+      },
+      {
+        "role": "admin",
+        "menu": "customer",
+        "haveedit": true,
+        "haveadd": true,
+        "havedelete": true
+      },
+      {
+        "role": "user",
+        "menu": "user",
+        "haveedit": false,
+        "haveadd": false,
+        "havedelete": false
+      },
+      {
+        "role": "user",
+        "menu": "customer",
+        "haveedit": true,
+        "haveadd": true,
+        "havedelete": false
+      }
+    ],
+    "customer": [
+      {
+        "id": 1,
+        "name": "Alice",
+        "Creditlimit": 1500
+      },
+      {
+        "id": 2,
+        "name": "Bob",
+        "Creditlimit": 1200
+      },
+      {
+        "id": 3,
+        "name": "Charlie",
+        "Creditlimit": 800
+      },
+      {
+        "id": 4,
+        "name": "David",
+        "Creditlimit": 2000
+      },
+      {
+        "id": 5,
+        "name": "Eva",
+        "Creditlimit": 1000
+      }
+    ]
+  }
+  

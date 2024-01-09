@@ -6,6 +6,7 @@ import { MatSort } from '@angular/material/sort';
 import { AuthService } from '../service/auth.service';
 import { MatDialog } from '@angular/material/dialog';
 import { UpdatepopupComponent } from '../updatepopup/updatepopup.component'
+import {MaterialModule} from '../material.module'
 
 @Component({
   selector: 'app-user',

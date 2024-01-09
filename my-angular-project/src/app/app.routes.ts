@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomerComponent } from './customer/customer.component';
 import { AuthGuard } from './guard/auth.guard';
@@ -11,12 +12,13 @@ export const routes: Routes = [
  {component:LoginComponent,path:'login'},
  {component:RegisterComponent,path:'register'},
  {component:HomeComponent,path:'',canActivate:[AuthGuard]},
- {component:UserComponent,path:'user',canActivate:[AuthGuard]},
+ {component:UserComponent,path:'user'},
  {component:CustomerComponent,path:'customer',canActivate:[AuthGuard]},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

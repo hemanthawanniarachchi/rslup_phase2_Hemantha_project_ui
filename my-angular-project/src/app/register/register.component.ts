@@ -3,7 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
 import { ToastrService } from 'ngx-toastr'
-
+import {MaterialModule} from '../material.module'
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
